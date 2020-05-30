@@ -1,15 +1,20 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    background-color: rgb(215, 240, 252);
+    background-color: rgb(195, 231, 248);
 }
 
 /* Header Start */
 header {
+    padding: 20px 35px;
     background-color: rgb(16, 124, 196);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 header a {
@@ -22,38 +27,68 @@ header h1 {
     font-size: 40px;
     color: rgb(153, 207, 238);
     margin: 0;
-    display: inline;
 }
 
 header nav {
-    float: right;
-    margin: 0 0;
+    margin: 7px 0;
 }
 
-header nav ul li {
-    display: inline;
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a{
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 30px;
 }
 
 
 /* Header End */
 
 /* Hero Start */
-.hero {
-    padding: 100px;
-    background-image: url(../images/hero-bg.jpg)
-}
-.hero h3 {
-    color: rgb(153, 207, 238);
-    background-color: rgb(16, 124, 196);
+.about-me {
+    padding: 10px;
+    background-image: url(../images/hero-bg3.jpg);
+    margin: 20px;
+    overflow: auto;
 }
 
-.hero p{
-    color: rgb(153, 207, 238);
-    background-color: rgb(16, 124, 196);
+.about-me img {
+    margin-right: 10px;
+    max-width: 100%;
+    overflow: auto;
+    float: left;
 }
 
-.hero-img{
-    max-width: 70%;
-    height: auto;
+.my-info h3 {
+    font-size: 50px;
+    margin: 0;
+    margin-bottom: 35px;
+    padding: 0 100px 20px 100px;
+    padding-bottom: 20px;
+    color: rgb(18, 88, 180);
+    text-align: center;
+    width: 100%
+
 }
+
+.my-info p{
+    font-size: 20px;
+    margin: 10px;
+    padding: 20px;
+    color: rgb(18, 88, 180);
+    background-color: rgb(157, 191, 219);
+    background: rgba(157,191,219,0.3);
+    overflow: auto;
+    text-align: center;
+
+}
+
+
+
 /* Hero End */
